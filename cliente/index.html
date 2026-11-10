@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Central do cliente | GridNode</title>
+<meta name="description" content="Já é cliente GridNode? Tire dúvidas, peça alterações, fale sobre o seu plano ou abra um pedido de suporte.">
+<meta name="theme-color" content="#0E0E10">
+<link rel="canonical" href="https://gridnode.com.br/cliente/">
+<meta property="og:title" content="Central do cliente | GridNode">
+<meta property="og:description" content="Já é cliente GridNode? Tire dúvidas, peça alterações, fale sobre o seu plano ou abra um pedido de suporte.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gridnode.com.br/cliente/">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script>try{if(sessionStorage.getItem('gn-veil')){document.documentElement.classList.add('veil-in');sessionStorage.removeItem('gn-veil')}}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sp" viewBox="0 0 200 200">
+    <g fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="square">
+      <path d="M88 76 L70 100 L88 124"/><path d="M112 76 L130 100 L112 124"/>
+      <path d="M80 86 L54 62 L42 26"/><path d="M73 96 L40 86 L14 70"/><path d="M73 104 L40 114 L14 130"/><path d="M80 114 L54 138 L42 174"/>
+      <path d="M120 86 L146 62 L158 26"/><path d="M127 96 L160 86 L186 70"/><path d="M127 104 L160 114 L186 130"/><path d="M120 114 L146 138 L158 174"/>
+    </g>
+    <rect class="node" x="93" y="93" width="14" height="14" style="fill: var(--node, currentColor)"/>
+  </symbol>
+</svg>
+
+<a class="sr-only" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/" aria-label="GridNode, início">
+      <svg class="sp-icon" aria-hidden="true"><use href="#sp"/></svg>
+      <span style="color: var(--paper)">grid<span>node</span></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">menu</button>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <div class="nav-links">
+        <a href="/#servicos">serviços</a>
+        <a href="/#processo">processo</a>
+        <a href="/#projetos">projetos</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="/cliente/">já sou cliente</a>
+        <a class="btn btn-red" href="/orcamento/">quero ser cliente</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <div class="wrap">
+    <div class="page-head">
+      <a class="back" href="/">← voltar</a>
+      <span class="label">central do cliente</span>
+      <h1 class="h-lg">como a gente pode <span class="red">ajudar?</span></h1>
+      <p class="lead">Escolha o assunto, preencha o formulário e sua mensagem chega pronta no nosso WhatsApp.</p>
+    </div>
+
+    <div class="topics" role="group" aria-label="Assunto">
+      <button class="topic" type="button" aria-pressed="false" data-topic="Dúvida"><span class="n">01</span><strong>tirar uma dúvida</strong><span>Sobre o seu site, sistema ou como usar algo.</span></button>
+      <button class="topic" type="button" aria-pressed="false" data-topic="Pedido de alteração"><span class="n">02</span><strong>pedir uma alteração</strong><span>Trocar texto, foto, preço, produto ou adicionar algo novo.</span></button>
+      <button class="topic" type="button" aria-pressed="false" data-topic="Algo não está funcionando"><span class="n">03</span><strong>algo não está funcionando</strong><span>Site fora do ar, erro no sistema ou atendente travado.</span></button>
+      <button class="topic" type="button" aria-pressed="false" data-topic="Meu plano"><span class="n">04</span><strong>meu plano</strong><span>Mudar de plano, cancelar ou falar sobre pagamento.</span></button>
+    </div>
+
+    <div class="form-grid">
+      <form class="form" id="formCliente" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="c-nome">Seu nome <span class="req">*</span></label>
+            <input class="input" id="c-nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="c-empresa">Empresa <span class="req">*</span></label>
+            <input class="input" id="c-empresa" name="empresa" type="text" autocomplete="organization" required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="c-assunto">Assunto <span class="req">*</span></label>
+            <select class="select" id="c-assunto" name="assunto" required>
+              <option value="">Escolha uma opção</option>
+              <option>Dúvida</option>
+              <option>Pedido de alteração</option>
+              <option>Algo não está funcionando</option>
+              <option>Meu plano</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-urg">Urgência</label>
+            <select class="select" id="c-urg" name="urgencia">
+              <option>Pode esperar</option>
+              <option>Preciso hoje</option>
+              <option>Urgente: parou de funcionar</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="c-msg">Descreva o que você precisa <span class="req">*</span></label>
+          <textarea class="textarea" id="c-msg" name="mensagem" required placeholder="Quanto mais detalhe, mais rápido a gente resolve."></textarea>
+        </div>
+        <div class="field">
+          <label for="c-link">Link ou página (opcional)</label>
+          <input class="input" id="c-link" name="link" type="text" placeholder="Ex.: seunegocio.com.br/cardapio">
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-red" type="submit">enviar pelo whatsapp →</button>
+          <button class="btn btn-ghost" type="button" data-email>enviar por e-mail</button>
+        </div>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+        <p class="privacy">Se tiver prints, mande depois na mesma conversa do WhatsApp.</p>
+      </form>
+
+      <aside class="aside" aria-label="Perguntas frequentes">
+        <h2>perguntas frequentes</h2>
+        <div class="faq">
+          <details><summary>Como peço uma alteração?</summary><p>Escolha “pedir uma alteração”, descreva o que quer mudar e envie. Se tiver fotos ou textos novos, mande na mesma conversa.</p></details>
+          <details><summary>O que a manutenção mensal inclui?</summary><p>A manutenção do seu site ou sistema no dia a dia: troca de valores, imagens novas, banners e ajustes do tipo, além de suporte em horário comercial.</p></details>
+          <details><summary>Como mudo ou cancelo meu plano?</summary><p>Escolha “meu plano” no formulário. A gente explica as opções e combina tudo por mensagem.</p></details>
+          <details><summary>Meu site saiu do ar. E agora?</summary><p>Escolha “algo não está funcionando” e marque a urgência como “parou de funcionar”. Essas mensagens têm prioridade.</p></details>
+        </div>
+        <div class="soon"><span class="dot"></span><span>Em breve: área com login para acompanhar seu plano e seus pedidos.</span></div>
+      </aside>
+    </div>
+  </div>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="label">orçamento</span>
+    <a class="foot-big" href="/orcamento/">vamos tirar seu<br>negócio do <span class="red">rascunho</span>→</a>
+    <nav class="foot-services" aria-label="Serviços">
+      <a href="/criacao-de-sites/">criação de sites</a>
+      <a href="/sistema-de-gestao/">sistema de gestão</a>
+      <a href="/cardapio-digital/">cardápio digital</a>
+      <a href="/atendente-de-whatsapp/">atendente de whatsapp</a>
+    </nav>
+    <div class="foot-links">
+      <a href="https://wa.me/5531972043051" target="_blank" rel="noopener"><span class="label">whatsapp</span><strong>(31) 97204-3051</strong></a>
+      <a href="mailto:contato.gridnode@gmail.com"><span class="label">e-mail</span><strong>contato.gridnode@gmail.com</strong></a>
+      <a href="https://instagram.com/gridnode.dev" target="_blank" rel="noopener"><span class="label">instagram</span><strong>@gridnode.dev</strong></a>
+      <div><span class="label">onde</span><strong>BH e região · online</strong></div>
+    </div>
+    <div class="foot-base">
+      <span>© <span class="ano">2026</span> GridNode · projetos com manutenção mensal inclusa</span>
+      <a href="/cliente/" style="text-decoration:none">já sou cliente →</a>
+    </div>
+  </div>
+</footer>
+
+<div class="veil" id="veil" aria-hidden="true">
+  <div class="veil-bars"><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="veil-spider">
+    <div class="gspider gspider--burst">
+      <svg class="l l-c" viewBox="0 0 200 200"><use href="#sp"/></svg>
+      <svg class="l l-m" viewBox="0 0 200 200"><use href="#sp"/></svg>
+      <svg class="l l-base" viewBox="0 0 200 200"><use href="#sp"/></svg>
+      <svg class="l l-slice" viewBox="0 0 200 200"><use href="#sp"/></svg>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>

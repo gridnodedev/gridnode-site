@@ -100,22 +100,59 @@ if (hero) {
     gsap.from('.hero-text > *', { y: 40, opacity: 0, filter: 'blur(8px)', duration: 1.2, ease: 'expo.out', stagger: 0.08, delay: 0.1 + delay });
     gsap.from(heroObjs, { y: 70, opacity: 0, scale: 0.94, filter: 'blur(10px)', duration: 1.5, ease: 'expo.out', stagger: 0.12, delay: 0.35 + delay });
   }
+  // mx e my vão de -0.5 a 0.5: mouse no computador, inclinação no celular
+  const applyTilt = (mx, my) => {
+    heroObjs.forEach(o => {
+      const d = Number(o.dataset.depth || -30);
+      o.querySelector('.par').style.transform = `translate(${(mx * d).toFixed(1)}px, ${(my * d).toFixed(1)}px)`;
+    });
+    spiderTilt.style.transform =
+      `perspective(900px) rotateY(${(mx * 34).toFixed(1)}deg) rotateX(${(-my * 26).toFixed(1)}deg) translate(${(mx * 24).toFixed(1)}px, ${(my * 18).toFixed(1)}px)`;
+  };
+
   if (finePointer && !reduced) {
     hero.addEventListener('mousemove', e => {
       const r = hero.getBoundingClientRect();
-      const mx = (e.clientX - r.left) / r.width - 0.5;
-      const my = (e.clientY - r.top) / r.height - 0.5;
-      heroObjs.forEach(o => {
-        const d = Number(o.dataset.depth || -30);
-        o.querySelector('.par').style.transform = `translate(${(mx * d).toFixed(1)}px, ${(my * d).toFixed(1)}px)`;
-      });
-      spiderTilt.style.transform =
-        `perspective(900px) rotateY(${(mx * 34).toFixed(1)}deg) rotateX(${(-my * 26).toFixed(1)}deg) translate(${(mx * 24).toFixed(1)}px, ${(my * 18).toFixed(1)}px)`;
+      applyTilt((e.clientX - r.left) / r.width - 0.5, (e.clientY - r.top) / r.height - 0.5);
     });
     hero.addEventListener('mouseleave', () => {
       heroObjs.forEach(o => { o.querySelector('.par').style.transform = ''; });
       spiderTilt.style.transform = '';
     });
+  }
+
+  /* celular: a aranha e os objetos seguem a inclinação do aparelho */
+  if (!finePointer && !reduced && 'DeviceOrientationEvent' in window) {
+    const clamp = v => Math.max(-0.5, Math.min(0.5, v));
+    const motionBtn = document.getElementById('motionBtn');
+    let base = null, tx = 0, ty = 0, cx = 0, cy = 0, running = false, heroVisible = true;
+    const onTilt = e => {
+      if (e.gamma == null || e.beta == null) return;
+      if (motionBtn) motionBtn.hidden = true;           // o sensor respondeu: não precisa do botão
+      if (base === null) base = e.beta;                 // o jeito que a pessoa está segurando vira o "centro"
+      base += (e.beta - base) * 0.004;                   // e o centro se ajusta devagar se ela mudar de posição
+      tx = clamp(e.gamma / 50);
+      ty = clamp((e.beta - base) / 50);
+      if (!running) { running = true; requestAnimationFrame(loop); }
+    };
+    const loop = () => {
+      cx += (tx - cx) * 0.12; cy += (ty - cy) * 0.12;    // suaviza o movimento
+      if (heroVisible) applyTilt(cx, cy);
+      if (Math.abs(tx - cx) > 0.001 || Math.abs(ty - cy) > 0.001) requestAnimationFrame(loop);
+      else running = false;
+    };
+    new IntersectionObserver(en => { heroVisible = en[0].isIntersecting; }).observe(hero);
+    const start = () => window.addEventListener('deviceorientation', onTilt, { passive: true });
+
+    const btn = document.getElementById('motionBtn');
+    start(); // no Android o movimento já funciona direto
+    if (btn && typeof DeviceOrientationEvent.requestPermission === 'function') {
+      // no iPhone o movimento só liga depois que a pessoa autoriza; o botão some quando o sensor responde
+      btn.hidden = false;
+      btn.addEventListener('click', () => {
+        DeviceOrientationEvent.requestPermission().catch(() => {}).finally(() => { btn.hidden = true; });
+      });
+    }
   }
 }
 
