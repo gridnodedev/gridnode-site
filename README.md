@@ -1,30 +1,31 @@
 # Site GridNode
 
-Site em HTML, CSS e JavaScript puros, com GSAP (via CDN) para as animações.
+Site em HTML, CSS e JavaScript puros, com GSAP (via CDN) para as animações. Publicado pelo GitHub Pages em gridnode.com.br.
 
-## Arquivos
+## Páginas
 
-- `index.html`: todas as páginas (home, quero ser cliente, central do cliente e os 3 projetos conceito)
-- `style.css`: cores, fontes e layout
-- `main.js`: troca de páginas com a aranha glitch, animações, processo e formulários
+| Endereço | Arquivo |
+|---|---|
+| gridnode.com.br | `index.html` |
+| /criacao-de-sites/ | `criacao-de-sites/index.html` |
+| /sistema-de-gestao/ | `sistema-de-gestao/index.html` |
+| /cardapio-digital/ | `cardapio-digital/index.html` |
+| /atendente-de-whatsapp/ | `atendente-de-whatsapp/index.html` |
+| /orcamento/ | `orcamento/index.html` |
+| /cliente/ | `cliente/index.html` |
+| /projetos/forno-lume/, /sereno/, /raiz/ | `projetos/.../index.html` |
+| página de erro | `404.html` |
+
+## Outros arquivos
+
+- `style.css`: cores, fontes e layout (vale para todas as páginas)
+- `main.js`: transição com a aranha glitch, animações, processo e formulários
+- `sitemap.xml` e `robots.txt`: ajudam o Google a encontrar as páginas
+- `CNAME`: diz ao GitHub Pages que o domínio é gridnode.com.br (não apague)
 - `favicon.svg`: ícone da aba
 
 ## Coisas para editar
 
-- **WhatsApp e e-mail:** nas duas primeiras linhas do `main.js` e no rodapé do `index.html`.
-- **FAQ "O que a manutenção mensal inclui?":** no `index.html` (procure por "manutenção do seu site").
-- **Projetos de clientes:** quando fechar um cliente, copie um bloco `<main class="view" data-view="p-...">`, troque o conteúdo, adicione a rota no objeto `ROUTES` do `main.js` e uma linha `<a class="row">` na seção de projetos.
-
-## Páginas (endereços)
-
-- `/#/`: home
-- `/#/orcamento`: quero ser cliente
-- `/#/cliente`: central do cliente
-- `/#/projetos/forno-lume`, `/#/projetos/sereno`, `/#/projetos/raiz`: projetos conceito
-
-## Publicar na Vercel
-
-1. Crie uma conta em vercel.com (pode entrar com o GitHub).
-2. Opção rápida: **Add New › Project**, arraste a pasta do site e clique em **Deploy**.
-3. Opção recomendada: suba a pasta para um repositório no GitHub e importe na Vercel. Cada alteração enviada ao GitHub atualiza o site sozinho.
-4. Para usar um domínio próprio (ex.: gridnode.com.br): **Settings › Domains** no projeto da Vercel.
+- **WhatsApp e e-mail:** nas duas primeiras linhas do `main.js`. O rodapé de cada página também mostra os dois.
+- **Topo e rodapé:** se mudar algo neles, mude em todas as páginas.
+- **Projeto de cliente novo:** copie a pasta de um projeto conceito, troque o conteúdo, adicione a linha dele na seção de projetos do `index.html` e o endereço no `sitemap.xml`.

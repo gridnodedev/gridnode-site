@@ -3,21 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>GridNode — sites e sistemas sob medida</title>
-<meta name="description" content="Sites e sistemas de gestão feitos sob medida para qualquer tipo de negócio. Belo Horizonte e região, atendimento online.">
+<title>GridNode | Criação de sites e sistemas sob medida em BH</title>
+<meta name="description" content="Criação de sites, sistemas de gestão, cardápio digital e atendente de WhatsApp para negócios de Belo Horizonte e região. Orçamento em até 24h.">
 <meta name="theme-color" content="#0E0E10">
-<meta property="og:title" content="GridNode — sites e sistemas sob medida">
-<meta property="og:description" content="Sites e sistemas de gestão feitos sob medida para qualquer tipo de negócio.">
+<link rel="canonical" href="https://gridnode.com.br/">
+<meta property="og:title" content="GridNode | Criação de sites e sistemas sob medida em BH">
+<meta property="og:description" content="Criação de sites, sistemas de gestão, cardápio digital e atendente de WhatsApp para negócios de Belo Horizonte e região. Orçamento em até 24h.">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:url" content="https://gridnode.com.br/">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script>try{if(sessionStorage.getItem('gn-veil')){document.documentElement.classList.add('veil-in');sessionStorage.removeItem('gn-veil')}}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "GridNode",
+  "url": "https://gridnode.com.br/",
+  "description": "Criação de sites, sistemas de gestão, cardápio digital e atendente de WhatsApp sob medida.",
+  "telephone": "+55-31-97204-3051",
+  "email": "contato.gridnode@gmail.com",
+  "areaServed": { "@type": "City", "name": "Belo Horizonte" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Belo Horizonte", "addressRegion": "MG", "addressCountry": "BR" },
+  "sameAs": ["https://instagram.com/gridnode.dev"],
+  "founder": { "@type": "Person", "name": "Gabrielly Nicacio" }
+}
+</script>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-<!-- símbolo da aranha, usado no site inteiro -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="sp" viewBox="0 0 200 200">
     <g fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="square">
@@ -31,32 +49,29 @@
 
 <a class="sr-only" href="#conteudo">Pular para o conteúdo</a>
 
-<!-- ============ TOPO ============ -->
 <header class="top" id="top">
   <div class="wrap top-in">
-    <a class="brand" href="#/" aria-label="GridNode, início">
+    <a class="brand" href="/" aria-label="GridNode, início">
       <svg class="sp-icon" aria-hidden="true"><use href="#sp"/></svg>
       <span style="color: var(--paper)">grid<span>node</span></span>
     </a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">menu</button>
     <nav class="nav" id="menu" aria-label="Principal">
       <div class="nav-links">
-        <a href="#/" data-goto="servicos">serviços</a>
-        <a href="#/" data-goto="processo">processo</a>
-        <a href="#/" data-goto="projetos">projetos</a>
+        <a href="/#servicos">serviços</a>
+        <a href="/#processo">processo</a>
+        <a href="/#projetos">projetos</a>
       </div>
       <div class="nav-cta">
-        <a class="btn btn-ghost" href="#/cliente">já sou cliente</a>
-        <a class="btn btn-red" href="#/orcamento">quero ser cliente</a>
+        <a class="btn btn-ghost" href="/cliente/">já sou cliente</a>
+        <a class="btn btn-red" href="/orcamento/">quero ser cliente</a>
       </div>
     </nav>
   </div>
 </header>
 
-<div id="conteudo">
+<main id="conteudo">
 
-<!-- ============ HOME ============ -->
-<main class="view" data-view="home">
 
   <section class="hero" id="hero">
 
@@ -139,12 +154,12 @@
           </div>
         </div></div>
       </div>
-      <span class="label">sites + sistemas de gestão · para qualquer área</span>
+      <span class="label">criação de sites e sistemas · bh e região · qualquer área</span>
       <h1 class="h-xl">o sistema que o seu negócio <span class="red">precisa.</span></h1>
       <p class="lead" style="max-width:520px">Sites e sistemas feitos sob medida, do cardápio digital à gestão completa de pedidos, agenda e estoque.</p>
       <div class="hero-ctas">
-        <a class="btn btn-red" href="#/orcamento">quero ser cliente →</a>
-        <a class="btn btn-ghost" href="#/" data-goto="processo">como funciona</a>
+        <a class="btn btn-red" href="/orcamento/">quero ser cliente →</a>
+        <a class="btn btn-ghost" href="/#processo">como funciona</a>
       </div>
     </div>
   </section>
@@ -163,30 +178,34 @@
         <p class="lead">Cada projeto começa do zero, pensado para o jeito que o seu negócio funciona.</p>
       </div>
       <div class="services">
-        <article class="svc">
+        <a class="svc" href="/criacao-de-sites/">
           <div class="svc-top"><span class="label">01</span><span class="tag">presença online</span></div>
           <h3>sites</h3>
           <p>Site institucional, página de vendas ou loja. Rápido, bonito no celular e fácil de achar no Google.</p>
           <span class="items">institucional · landing page · loja</span>
-        </article>
-        <article class="svc">
+          <span class="more">saiba mais →</span>
+        </a>
+        <a class="svc" href="/sistema-de-gestao/">
           <div class="svc-top"><span class="label">02</span><span class="tag">sob medida</span></div>
           <h3>sistemas de gestão</h3>
           <p>O controle do seu negócio num lugar só, desenhado em volta da sua rotina, não de um modelo pronto.</p>
           <span class="items">estoque · caixa · pedidos · agenda</span>
-        </article>
-        <article class="svc">
+          <span class="more">saiba mais →</span>
+        </a>
+        <a class="svc" href="/atendente-de-whatsapp/">
           <div class="svc-top"><span class="label">03</span><span class="tag">automação</span></div>
           <h3>atendente de whatsapp</h3>
           <p>Responde dúvidas, mostra produtos e encaminha pedidos enquanto você atende quem está no balcão.</p>
           <span class="items">respostas · pedidos · horários</span>
-        </article>
-        <article class="svc">
+          <span class="more">saiba mais →</span>
+        </a>
+        <a class="svc" href="/cardapio-digital/">
           <div class="svc-top"><span class="label">04</span><span class="tag">vitrine</span></div>
           <h3>cardápio e catálogo digital</h3>
           <p>Seus produtos num link para mandar no WhatsApp e colocar na bio, atualizado por você.</p>
           <span class="items">cardápio · catálogo · QR code</span>
-        </article>
+          <span class="more">saiba mais →</span>
+        </a>
       </div>
     </div>
   </section>
@@ -295,7 +314,7 @@
         <span class="label">projetos conceito · cases de clientes em breve</span>
       </div>
       <div class="index">
-        <a class="row" href="#/projetos/forno-lume">
+        <a class="row" href="/projetos/forno-lume/">
           <span class="n">01</span><span class="t">forno lume</span><span class="k">pizzaria · cardápio digital + pedidos</span><span class="arrow" aria-hidden="true">→</span>
           <span class="prev" aria-hidden="true" style="background:#1A0F08;display:flex;flex-direction:column;gap:8px;padding:16px">
             <span style="font-weight:900;font-size:18px;letter-spacing:-0.04em;color:#FFE9D6">forno<span style="color:#FF7A1A">lume</span></span>
@@ -303,7 +322,7 @@
             <span style="flex:1;border-radius:8px;background:#2A1A0E"></span>
           </span>
         </a>
-        <a class="row" href="#/projetos/sereno">
+        <a class="row" href="/projetos/sereno/">
           <span class="n">02</span><span class="t">sereno clínica</span><span class="k">clínica · site + agenda online</span><span class="arrow" aria-hidden="true">→</span>
           <span class="prev" aria-hidden="true" style="background:#F4F7F6;display:flex;flex-direction:column;gap:8px;padding:16px">
             <span style="font-weight:900;font-size:18px;letter-spacing:-0.04em;color:#123B37">sereno</span>
@@ -311,7 +330,7 @@
             <span style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:4px"><i style="background:#D5E9E5"></i><i style="background:#2BB3A3"></i><i style="background:#D5E9E5"></i><i style="background:#D5E9E5"></i></span>
           </span>
         </a>
-        <a class="row" href="#/projetos/raiz">
+        <a class="row" href="/projetos/raiz/">
           <span class="n">03</span><span class="t">raiz distribuidora</span><span class="k">distribuidora · sistema de estoque e caixa</span><span class="arrow" aria-hidden="true">→</span>
           <span class="prev" aria-hidden="true" style="background:#101511;display:grid;grid-template-columns:44px 1fr;gap:8px;padding:12px">
             <span style="background:#18201A;border-radius:6px"></span>
@@ -326,13 +345,13 @@
   <section class="section" id="caminhos" style="padding-top:40px">
     <div class="wrap">
       <div class="paths">
-        <a class="path path--new" href="#/orcamento">
+        <a class="path path--new" href="/orcamento/">
           <span class="label">ainda não é cliente</span>
           <h3>quero ser cliente</h3>
           <p>Conte o que o seu negócio precisa e receba uma resposta em até 24h.</p>
           <span class="btn go" style="background:var(--black);color:var(--paper)">pedir orçamento →</span>
         </a>
-        <a class="path" href="#/cliente">
+        <a class="path" href="/cliente/">
           <span class="label">já trabalha com a gente</span>
           <h3>já sou cliente</h3>
           <p>Tire dúvidas, peça alterações, fale sobre o seu plano ou avise se algo parou de funcionar.</p>
@@ -341,321 +360,19 @@
       </div>
     </div>
   </section>
+
 </main>
 
-<!-- ============ QUERO SER CLIENTE ============ -->
-<main class="view" data-view="orcamento" hidden>
-  <div class="wrap">
-    <div class="page-head">
-      <a class="back" href="#/">← voltar</a>
-      <span class="label">quero ser cliente</span>
-      <h1 class="h-lg">conta pra gente o que você <span class="red">precisa.</span></h1>
-      <p class="lead">Leva um minuto. Sua mensagem chega pronta no nosso WhatsApp e a resposta sai em até 24h.</p>
-    </div>
-
-    <div class="form-grid">
-      <form class="form" id="formLead" novalidate>
-        <div class="field-row">
-          <div class="field">
-            <label for="l-nome">Seu nome <span class="req">*</span></label>
-            <input class="input" id="l-nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos te chamar?">
-          </div>
-          <div class="field">
-            <label for="l-negocio">Nome do negócio <span class="req">*</span></label>
-            <input class="input" id="l-negocio" name="negocio" type="text" autocomplete="organization" required placeholder="Ex.: Padaria do Bairro">
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="l-area">Área do negócio <span class="req">*</span></label>
-          <select class="select" id="l-area" name="area" required>
-            <option value="">Escolha uma opção</option>
-            <option>Restaurante, lanchonete ou delivery</option>
-            <option>Clínica ou saúde</option>
-            <option>Loja ou comércio</option>
-            <option>Beleza, salão ou barbearia</option>
-            <option>Distribuidora ou atacado</option>
-            <option>Oficina ou prestação de serviços</option>
-            <option>Escritório ou consultoria</option>
-            <option>Academia ou estúdio</option>
-            <option>Outra</option>
-          </select>
-        </div>
-
-        <fieldset class="field" id="l-precisa">
-          <legend>O que você precisa? <span class="req">*</span> <span style="color:var(--text-3)">(pode marcar mais de um)</span></legend>
-          <div class="chips">
-            <label class="chip"><input type="checkbox" name="precisa" value="Site"><span>site</span></label>
-            <label class="chip"><input type="checkbox" name="precisa" value="Sistema de gestão"><span>sistema de gestão</span></label>
-            <label class="chip"><input type="checkbox" name="precisa" value="Atendente de WhatsApp"><span>atendente de whatsapp</span></label>
-            <label class="chip"><input type="checkbox" name="precisa" value="Cardápio ou catálogo digital"><span>cardápio / catálogo</span></label>
-            <label class="chip"><input type="checkbox" name="precisa" value="Ainda não sei"><span>ainda não sei</span></label>
-          </div>
-        </fieldset>
-
-        <div class="field">
-          <label for="l-quando">Para quando?</label>
-          <select class="select" id="l-quando" name="quando">
-            <option>O quanto antes</option>
-            <option>Nos próximos 30 dias</option>
-            <option>Daqui a alguns meses</option>
-            <option>Só estou pesquisando</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="l-msg">Conte um pouco sobre o seu negócio</label>
-          <textarea class="textarea" id="l-msg" name="mensagem" placeholder="Ex.: hoje anoto os pedidos no caderno e queria algo para organizar tudo."></textarea>
-        </div>
-
-        <div class="form-actions">
-          <button class="btn btn-red" type="submit">enviar pelo whatsapp →</button>
-          <button class="btn btn-ghost" type="button" data-email>enviar por e-mail</button>
-        </div>
-        <p class="form-msg" role="status" aria-live="polite"></p>
-        <p class="privacy">Seus dados vão direto para o nosso WhatsApp ou e-mail. O site não guarda nada.</p>
-      </form>
-
-      <aside class="aside" aria-label="O que acontece depois">
-        <h2>o que acontece depois</h2>
-        <ol class="steps-list">
-          <li><span>01</span><div><strong>Você manda a mensagem</strong><p>Ela chega pronta, com tudo o que você preencheu.</p></div></li>
-          <li><span>02</span><div><strong>A gente responde em até 24h</strong><p>Com algumas perguntas para entender a sua rotina.</p></div></li>
-          <li><span>03</span><div><strong>Proposta sob medida</strong><p>Você recebe o que faz sentido para o seu negócio, sem pacote engessado.</p></div></li>
-          <li><span>04</span><div><strong>Do rascunho ao deploy</strong><p>Você acompanha cada etapa até o projeto entrar no ar.</p></div></li>
-        </ol>
-      </aside>
-    </div>
-  </div>
-</main>
-
-<!-- ============ JÁ SOU CLIENTE ============ -->
-<main class="view" data-view="cliente" hidden>
-  <div class="wrap">
-    <div class="page-head">
-      <a class="back" href="#/">← voltar</a>
-      <span class="label">central do cliente</span>
-      <h1 class="h-lg">como a gente pode <span class="red">ajudar?</span></h1>
-      <p class="lead">Escolha o assunto, preencha o formulário e sua mensagem chega pronta no nosso WhatsApp.</p>
-    </div>
-
-    <div class="topics" role="group" aria-label="Assunto">
-      <button class="topic" type="button" aria-pressed="false" data-topic="Dúvida"><span class="n">01</span><strong>tirar uma dúvida</strong><span>Sobre o seu site, sistema ou como usar algo.</span></button>
-      <button class="topic" type="button" aria-pressed="false" data-topic="Pedido de alteração"><span class="n">02</span><strong>pedir uma alteração</strong><span>Trocar texto, foto, preço, produto ou adicionar algo novo.</span></button>
-      <button class="topic" type="button" aria-pressed="false" data-topic="Algo não está funcionando"><span class="n">03</span><strong>algo não está funcionando</strong><span>Site fora do ar, erro no sistema ou atendente travado.</span></button>
-      <button class="topic" type="button" aria-pressed="false" data-topic="Meu plano"><span class="n">04</span><strong>meu plano</strong><span>Mudar de plano, cancelar ou falar sobre pagamento.</span></button>
-    </div>
-
-    <div class="form-grid">
-      <form class="form" id="formCliente" novalidate>
-        <div class="field-row">
-          <div class="field">
-            <label for="c-nome">Seu nome <span class="req">*</span></label>
-            <input class="input" id="c-nome" name="nome" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="c-empresa">Empresa <span class="req">*</span></label>
-            <input class="input" id="c-empresa" name="empresa" type="text" autocomplete="organization" required>
-          </div>
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="c-assunto">Assunto <span class="req">*</span></label>
-            <select class="select" id="c-assunto" name="assunto" required>
-              <option value="">Escolha uma opção</option>
-              <option>Dúvida</option>
-              <option>Pedido de alteração</option>
-              <option>Algo não está funcionando</option>
-              <option>Meu plano</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="c-urg">Urgência</label>
-            <select class="select" id="c-urg" name="urgencia">
-              <option>Pode esperar</option>
-              <option>Preciso hoje</option>
-              <option>Urgente: parou de funcionar</option>
-            </select>
-          </div>
-        </div>
-        <div class="field">
-          <label for="c-msg">Descreva o que você precisa <span class="req">*</span></label>
-          <textarea class="textarea" id="c-msg" name="mensagem" required placeholder="Quanto mais detalhe, mais rápido a gente resolve."></textarea>
-        </div>
-        <div class="field">
-          <label for="c-link">Link ou página (opcional)</label>
-          <input class="input" id="c-link" name="link" type="text" placeholder="Ex.: seunegocio.com.br/cardapio">
-        </div>
-        <div class="form-actions">
-          <button class="btn btn-red" type="submit">enviar pelo whatsapp →</button>
-          <button class="btn btn-ghost" type="button" data-email>enviar por e-mail</button>
-        </div>
-        <p class="form-msg" role="status" aria-live="polite"></p>
-        <p class="privacy">Se tiver prints, mande depois na mesma conversa do WhatsApp.</p>
-      </form>
-
-      <aside class="aside" aria-label="Perguntas frequentes">
-        <h2>perguntas frequentes</h2>
-        <div class="faq">
-          <details><summary>Como peço uma alteração?</summary><p>Escolha “pedir uma alteração”, descreva o que quer mudar e envie. Se tiver fotos ou textos novos, mande na mesma conversa.</p></details>
-          <details><summary>O que a manutenção mensal inclui?</summary><p>A manutenção do seu site ou sistema no dia a dia: troca de valores, imagens novas, banners e ajustes do tipo, além de suporte em horário comercial.</p></details>
-          <details><summary>Como mudo ou cancelo meu plano?</summary><p>Escolha “meu plano” no formulário. A gente explica as opções e combina tudo por mensagem.</p></details>
-          <details><summary>Meu site saiu do ar. E agora?</summary><p>Escolha “algo não está funcionando” e marque a urgência como “parou de funcionar”. Essas mensagens têm prioridade.</p></details>
-        </div>
-        <div class="soon"><span class="dot"></span><span>Em breve: área com login para acompanhar seu plano e seus pedidos.</span></div>
-      </aside>
-    </div>
-  </div>
-</main>
-
-<!-- ============ PROJETO CONCEITO: FORNO LUME ============ -->
-<main class="view" data-view="p-forno" hidden>
-  <div class="wrap">
-    <div class="page-head">
-      <a class="back" href="#/" data-goto="projetos">← projetos</a>
-      <span class="badge">projeto conceito</span>
-      <h1 class="h-lg">forno lume</h1>
-      <div class="proj-meta">
-        <div><span>área</span><strong>Pizzaria e delivery</strong></div>
-        <div><span>entregas</span><strong>Cardápio digital, painel de pedidos e atendente</strong></div>
-        <div><span>plataforma</span><strong>Celular e computador</strong></div>
-      </div>
-    </div>
-  </div>
-  <div class="proj-visual">
-    <div class="proj-visual-in">
-      <div class="m-phone" role="img" aria-label="Cardápio digital da Forno Lume no celular">
-        <div class="scr" style="background:#140B05;color:#FFE9D6;padding:22px 16px;gap:14px">
-          <span style="font-weight:900;font-size:22px;letter-spacing:-0.04em">forno<span style="color:#FF7A1A">lume</span></span>
-          <div style="display:flex;gap:6px;font-size:11px;font-weight:700"><span style="background:#FF7A1A;color:#140B05;padding:6px 12px;border-radius:999px">pizzas</span><span style="background:#2A1A0E;padding:6px 12px;border-radius:999px">bebidas</span><span style="background:#2A1A0E;padding:6px 12px;border-radius:999px">doces</span></div>
-          <div style="display:flex;flex-direction:column;gap:10px">
-            <div style="display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:center"><i style="height:58px;border-radius:12px;background:#3A2414"></i><div><b style="font-size:14px">Margherita</b><div style="font-size:11px;opacity:.7">Molho, mozzarella e manjericão</div><div style="font-size:12px;color:#FF7A1A;font-weight:700;margin-top:2px">R$ 49</div></div></div>
-            <div style="display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:center"><i style="height:58px;border-radius:12px;background:#3A2414"></i><div><b style="font-size:14px">Calabresa</b><div style="font-size:11px;opacity:.7">Calabresa artesanal e cebola</div><div style="font-size:12px;color:#FF7A1A;font-weight:700;margin-top:2px">R$ 52</div></div></div>
-            <div style="display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:center"><i style="height:58px;border-radius:12px;background:#3A2414"></i><div><b style="font-size:14px">Quatro queijos</b><div style="font-size:11px;opacity:.7">Gorgonzola, parmesão e mais</div><div style="font-size:12px;color:#FF7A1A;font-weight:700;margin-top:2px">R$ 56</div></div></div>
-          </div>
-          <span style="margin-top:auto;height:46px;border-radius:14px;background:#FF7A1A;color:#140B05;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center">ver sacola · 2 itens</span>
-        </div>
-      </div>
-      <div class="m-card" style="background:#1A0F08;color:#FFE9D6;width:min(100%,520px);display:flex;flex-direction:column;gap:14px" role="img" aria-label="Painel de pedidos com colunas novo, no forno e saiu">
-        <div style="display:flex;justify-content:space-between;align-items:baseline"><b style="font-size:18px;letter-spacing:-0.03em">pedidos de hoje</b><span style="font-family:var(--mono);font-size:11px;opacity:.7">painel</span></div>
-        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;font-size:12px">
-          <div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:var(--mono);font-size:10px;color:#FF7A1A">novo</span><span style="background:#2A1A0E;border-left:3px solid #FF7A1A;padding:10px;border-radius:8px">#0231<br><span style="opacity:.7">Margherita</span></span><span style="background:#2A1A0E;padding:10px;border-radius:8px">#0232<br><span style="opacity:.7">Calabresa</span></span></div>
-          <div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:var(--mono);font-size:10px;opacity:.7">no forno</span><span style="background:#2A1A0E;padding:10px;border-radius:8px">#0229<br><span style="opacity:.7">4 queijos</span></span></div>
-          <div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:var(--mono);font-size:10px;opacity:.7">saiu</span><span style="background:#2A1A0E;padding:10px;border-radius:8px;opacity:.6">#0227<br><span>Combo 2</span></span><span style="background:#2A1A0E;padding:10px;border-radius:8px;opacity:.6">#0226<br><span>Margherita</span></span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="proj-body">
-      <div class="proj-card"><span class="label">o desafio</span><p>Pedidos chegando por telefone, WhatsApp e balcão ao mesmo tempo, sem um lugar só para acompanhar o que entrou e o que já saiu.</p></div>
-      <div class="proj-card"><span class="label">a solução</span><p>Cardápio digital com link e QR code, pedidos que chegam organizados num painel e um atendente de WhatsApp para as dúvidas de sempre.</p></div>
-      <div class="proj-card"><span class="label">o que foi entregue</span><ul><li>Cardápio digital</li><li>Painel de pedidos</li><li>Atendente de WhatsApp</li></ul></div>
-    </div>
-    <a class="proj-next" href="#/projetos/sereno"><div><span class="label">próximo projeto →</span><p class="h-md" style="margin-top:12px">sereno clínica</p></div><span class="btn btn-ghost">ver projeto</span></a>
-  </div>
-</main>
-
-<!-- ============ PROJETO CONCEITO: SERENO ============ -->
-<main class="view" data-view="p-sereno" hidden>
-  <div class="wrap">
-    <div class="page-head">
-      <a class="back" href="#/" data-goto="projetos">← projetos</a>
-      <span class="badge">projeto conceito</span>
-      <h1 class="h-lg">sereno clínica</h1>
-      <div class="proj-meta">
-        <div><span>área</span><strong>Clínica e saúde</strong></div>
-        <div><span>entregas</span><strong>Site e agenda online</strong></div>
-        <div><span>plataforma</span><strong>Celular e computador</strong></div>
-      </div>
-    </div>
-  </div>
-  <div class="proj-visual">
-    <div class="proj-visual-in">
-      <div class="m-win" role="img" aria-label="Site da Sereno Clínica com botão de agendar">
-        <div class="m-bar"><i></i><i></i><i></i><span>serenoclinica.com.br</span></div>
-        <div style="background:#F4F7F6;padding:28px;display:flex;flex-direction:column;gap:18px">
-          <div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:18px;letter-spacing:-0.04em;color:#123B37">sereno</b><span style="display:flex;gap:16px;font-size:12px;color:#3C5A57"><span>especialidades</span><span>equipe</span><span>contato</span></span></div>
-          <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:center">
-            <div style="display:flex;flex-direction:column;gap:12px"><b style="font-size:40px;line-height:.95;letter-spacing:-0.05em;color:#123B37">cuidado<br>sem pressa.</b><span style="font-size:13px;color:#3C5A57">Agende sua consulta online, a qualquer hora.</span><span style="align-self:flex-start;background:#2BB3A3;color:#06201D;font-weight:700;font-size:13px;padding:12px 18px;border-radius:999px">agendar consulta</span></div>
-            <i style="height:180px;border-radius:16px;background:#D5E9E5"></i>
-          </div>
-        </div>
-      </div>
-      <div class="m-card" style="background:#fff;color:#123B37;width:300px;display:flex;flex-direction:column;gap:12px" role="img" aria-label="Agenda online mostrando horários livres">
-        <b style="font-size:16px">escolha um horário</b>
-        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;font-size:11px;text-align:center"><span style="padding:8px 0;border-radius:8px;background:#EEF4F3">seg<br>10</span><span style="padding:8px 0;border-radius:8px;background:#2BB3A3;color:#06201D;font-weight:700">ter<br>11</span><span style="padding:8px 0;border-radius:8px;background:#EEF4F3">qua<br>12</span><span style="padding:8px 0;border-radius:8px;background:#EEF4F3">qui<br>13</span><span style="padding:8px 0;border-radius:8px;background:#EEF4F3">sex<br>14</span></div>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-size:12px;text-align:center"><span style="padding:9px 0;border-radius:8px;border:1px solid #CFE3DF">08:00</span><span style="padding:9px 0;border-radius:8px;border:1px solid #CFE3DF;opacity:.35;text-decoration:line-through">09:00</span><span style="padding:9px 0;border-radius:8px;background:#123B37;color:#fff">10:30</span><span style="padding:9px 0;border-radius:8px;border:1px solid #CFE3DF">14:00</span><span style="padding:9px 0;border-radius:8px;border:1px solid #CFE3DF">15:30</span><span style="padding:9px 0;border-radius:8px;border:1px solid #CFE3DF;opacity:.35;text-decoration:line-through">17:00</span></div>
-        <span style="background:#2BB3A3;color:#06201D;font-weight:700;font-size:13px;padding:12px;border-radius:12px;text-align:center">confirmar · ter 11, 10:30</span>
-      </div>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="proj-body">
-      <div class="proj-card"><span class="label">o desafio</span><p>Agenda em caderno e pacientes ligando o dia inteiro só para perguntar se tem horário.</p></div>
-      <div class="proj-card"><span class="label">a solução</span><p>Um site com as especialidades e a equipe, e agendamento online que mostra só os horários livres e confirma na hora.</p></div>
-      <div class="proj-card"><span class="label">o que foi entregue</span><ul><li>Site institucional</li><li>Agenda online</li><li>Lembrete de consulta</li></ul></div>
-    </div>
-    <a class="proj-next" href="#/projetos/raiz"><div><span class="label">próximo projeto →</span><p class="h-md" style="margin-top:12px">raiz distribuidora</p></div><span class="btn btn-ghost">ver projeto</span></a>
-  </div>
-</main>
-
-<!-- ============ PROJETO CONCEITO: RAIZ ============ -->
-<main class="view" data-view="p-raiz" hidden>
-  <div class="wrap">
-    <div class="page-head">
-      <a class="back" href="#/" data-goto="projetos">← projetos</a>
-      <span class="badge">projeto conceito</span>
-      <h1 class="h-lg">raiz distribuidora</h1>
-      <div class="proj-meta">
-        <div><span>área</span><strong>Distribuidora de bebidas</strong></div>
-        <div><span>entregas</span><strong>Sistema de estoque e caixa</strong></div>
-        <div><span>plataforma</span><strong>Computador e celular</strong></div>
-      </div>
-    </div>
-  </div>
-  <div class="proj-visual">
-    <div class="proj-visual-in">
-      <div class="m-card" style="background:#0F1410;color:#E8F0E9;width:min(100%,760px);padding:0;overflow:hidden;display:grid;grid-template-columns:150px 1fr" role="img" aria-label="Painel do sistema de estoque e caixa da Raiz Distribuidora">
-        <div style="background:#141B15;padding:20px 16px;display:flex;flex-direction:column;gap:12px;font-size:13px">
-          <b style="font-size:17px;letter-spacing:-0.04em">raiz<span style="color:#3FA34D">.</span></b>
-          <span style="background:#1F2A21;padding:8px 10px;border-radius:8px;color:#3FA34D;font-weight:700">painel</span>
-          <span style="padding:8px 10px;opacity:.7">estoque</span><span style="padding:8px 10px;opacity:.7">entradas</span><span style="padding:8px 10px;opacity:.7">caixa</span><span style="padding:8px 10px;opacity:.7">relatórios</span>
-        </div>
-        <div style="padding:22px;display:flex;flex-direction:column;gap:16px">
-          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
-            <div style="background:#18201A;padding:14px;border-radius:10px"><span style="font-size:11px;opacity:.7">itens em estoque</span><div style="font-weight:900;font-size:24px">1.284</div></div>
-            <div style="background:#3FA34D;color:#06140A;padding:14px;border-radius:10px"><span style="font-size:11px">estoque baixo</span><div style="font-weight:900;font-size:24px">7 itens</div></div>
-            <div style="background:#18201A;padding:14px;border-radius:10px"><span style="font-size:11px;opacity:.7">caixa de hoje</span><div style="font-weight:900;font-size:24px">aberto</div></div>
-          </div>
-          <div style="display:flex;flex-direction:column;font-size:12px">
-            <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:8px 0;opacity:.6;font-family:var(--mono);font-size:10px"><span>produto</span><span>qtd</span><span>status</span></div>
-            <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:10px 0;border-top:1px solid #222C24"><span>Água mineral 500ml</span><span>18</span><span style="color:#FFB020">baixo</span></div>
-            <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:10px 0;border-top:1px solid #222C24"><span>Refrigerante 2L</span><span>142</span><span style="color:#3FA34D">ok</span></div>
-            <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:10px 0;border-top:1px solid #222C24"><span>Suco de uva 1L</span><span>9</span><span style="color:#FFB020">baixo</span></div>
-            <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:10px 0;border-top:1px solid #222C24"><span>Gelo 5kg</span><span>64</span><span style="color:#3FA34D">ok</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="proj-body">
-      <div class="proj-card"><span class="label">o desafio</span><p>Estoque contado na mão, produto faltando sem aviso e diferença no caixa no fim do dia.</p></div>
-      <div class="proj-card"><span class="label">a solução</span><p>Um sistema com entrada e saída de produtos, alerta de estoque baixo e fechamento de caixa, usado no computador do balcão e no celular.</p></div>
-      <div class="proj-card"><span class="label">o que foi entregue</span><ul><li>Controle de estoque</li><li>Caixa e fechamento do dia</li><li>Relatórios simples</li></ul></div>
-    </div>
-    <a class="proj-next" href="#/projetos/forno-lume"><div><span class="label">próximo projeto →</span><p class="h-md" style="margin-top:12px">forno lume</p></div><span class="btn btn-ghost">ver projeto</span></a>
-  </div>
-</main>
-
-</div>
-
-<!-- ============ RODAPÉ ============ -->
 <footer class="foot">
   <div class="wrap foot-in">
     <span class="label">orçamento</span>
-    <a class="foot-big" href="#/orcamento">vamos tirar seu<br>negócio do <span class="red">rascunho</span>→</a>
+    <a class="foot-big" href="/orcamento/">vamos tirar seu<br>negócio do <span class="red">rascunho</span>→</a>
+    <nav class="foot-services" aria-label="Serviços">
+      <a href="/criacao-de-sites/">criação de sites</a>
+      <a href="/sistema-de-gestao/">sistema de gestão</a>
+      <a href="/cardapio-digital/">cardápio digital</a>
+      <a href="/atendente-de-whatsapp/">atendente de whatsapp</a>
+    </nav>
     <div class="foot-links">
       <a href="https://wa.me/5531972043051" target="_blank" rel="noopener"><span class="label">whatsapp</span><strong>(31) 97204-3051</strong></a>
       <a href="mailto:contato.gridnode@gmail.com"><span class="label">e-mail</span><strong>contato.gridnode@gmail.com</strong></a>
@@ -663,13 +380,12 @@
       <div><span class="label">onde</span><strong>BH e região · online</strong></div>
     </div>
     <div class="foot-base">
-      <span>© <span id="ano">2026</span> GridNode · projetos com manutenção mensal inclusa</span>
-      <a href="#/cliente" style="text-decoration:none">já sou cliente →</a>
+      <span>© <span class="ano">2026</span> GridNode · projetos com manutenção mensal inclusa</span>
+      <a href="/cliente/" style="text-decoration:none">já sou cliente →</a>
     </div>
   </div>
 </footer>
 
-<!-- transição entre páginas: a aranha glitch no meio da tela -->
 <div class="veil" id="veil" aria-hidden="true">
   <div class="veil-bars"><i></i><i></i><i></i><i></i><i></i></div>
   <div class="veil-spider">
@@ -684,6 +400,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="main.js"></script>
+<script src="/main.js"></script>
 </body>
 </html>
