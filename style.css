@@ -174,12 +174,17 @@ section[id], form[id] { scroll-margin-top: 88px; }
   .hero { min-height: auto; padding-top: 32px; overflow: hidden; }
   .o-chat, .o-chart { display: none; }
   .o-stock, .o-web { display: block; }
-  /* objetos pequenos em volta da aranha (zoom de 34%: os valores abaixo aparecem a 34% na tela) */
-  .hero-obj { zoom: .34; opacity: .75; }
-  .o-phone { left: 50px; top: 90px; }
-  .o-stock { left: 40px; top: 560px; }
-  .o-agenda { right: 40px; top: 70px; left: auto; }
-  .o-web { right: 30px; top: 370px; left: auto; }
+  /* objetos pequenos em volta da aranha: o cartão inteiro (caixa e texto) é reduzido junto */
+  .hero-obj { opacity: .8; width: 0; height: 0; }
+  .hero-obj .obj { scale: .34; }
+  .hero-obj .par, .hero-obj .float { width: max-content; }
+  .o-phone { left: 16px; top: 34px; }
+  .o-stock { left: 12px; top: 196px; }
+  .o-agenda { right: 12px; top: 26px; left: auto; }
+  .o-web { right: 10px; top: 128px; left: auto; transform: none; }
+  .o-phone .obj, .o-stock .obj { transform-origin: top left; }
+  .o-agenda .obj, .o-web .obj { transform-origin: top right; }
+  .o-agenda .par, .o-web .par { position: absolute; right: 0; top: 0; }
 }
 .motion-btn { margin-top: 4px; min-height: 40px; padding: 0 16px; border-radius: 999px; border: 1px dashed var(--line-2); background: transparent; color: var(--text-2); font-family: var(--mono); font-size: 12px; cursor: pointer; }
 .motion-btn:hover { color: var(--paper); border-color: var(--paper); }
